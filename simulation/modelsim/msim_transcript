@@ -1,0 +1,21 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Pract2_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# ** Error: (vlib-35) Failed to create directory "gate_work".
+# 
+# Permission denied. (errno = EACCES)
+# Error in macro ./Pract2_run_msim_gate_vhdl.do line 5
+# ** Error: (vlib-35) Failed to create directory "gate_work".
+# 
+# Permission denied. (errno = EACCES)
+#     while executing
+# "vlib gate_work"
+vsim +altera -do Pract2_run_msim_gate_vhdl.do -l msim_transcript -gui -t 100ns gate_work.pract2_vhd_tst
+# vsim +altera -do Pract2_run_msim_gate_vhdl.do -l msim_transcript -gui -t 100ns gate_work.pract2_vhd_tst 
+# ** Error: (vsim-19) Failed to access library 'gate_work' at "gate_work".
+# 
+# No such file or directory. (errno = ENOENT)
+# Error loading design
